@@ -21,3 +21,17 @@
 #entry-stock-select{display:block;width:100%;padding:12px;margin:8px 0;border-radius:10px;background:#183b4a;color:#fff;font:inherit;border:1px solid #76939b}
 #welcome{max-height:calc(100dvh - 32px);overflow-y:auto}#entry-status{font-size:13px;min-height:1.5em}#stock-select{max-width:220px}
 @media(max-width:600px){.hud{flex-wrap:wrap;gap:6px}.hud nav{flex-wrap:wrap;gap:4px}#stock-select{max-width:170px}#welcome{padding:20px}#welcome p{margin:10px 0}}
+
+/* Search stays inside the scrollable entry panel; scene inputs never receive it. */
+#welcome{max-height:calc(100dvh - 24px);overflow-y:auto;overscroll-behavior:contain}
+#stock-picker{text-align:left;margin:16px 0}#stock-picker label{display:block;margin:8px 0}
+.stock-search-row{display:flex;gap:8px}#stock-search{min-width:0;flex:1;font:inherit;padding:12px;border-radius:10px;border:1px solid #8ca7b8;background:#102936;color:#fff}
+#stock-picker button{padding:8px 12px}#stock-sort{width:100%;margin-bottom:8px}#stock-data-note{display:inline;line-height:1.6;color:#bfd0da}#stock-data-source{color:#9dd8ff;font-size:12px;text-decoration:underline}
+#stock-results{list-style:none;padding:0;margin:8px 0;max-height:180px;overflow-y:auto;overscroll-behavior:contain;border:1px solid #688695;border-radius:8px}
+#stock-results li{padding:12px;cursor:pointer;border-bottom:1px solid #46616c;min-height:44px;touch-action:pan-y}
+#stock-results li:last-child{border-bottom:0}#stock-results li:hover,#stock-results li.is-active{background:#30576c;outline:2px solid #ffdb76;outline-offset:-2px}#stock-results li[aria-selected=true]{font-weight:700}
+#stock-selection{font-weight:700;color:#ffdb76}#stock-search:focus-visible,#stock-sort:focus-visible{outline:2px solid #ffdb76;outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-height:600px){#stock-results{max-height:120px}#welcome{padding:16px}}
+#welcome{top:50%;transform:translate(-50%,-50%);max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+#stock-picker .stock-search-row button{width:auto;margin:0;flex:0 0 auto}

@@ -2,3 +2,4 @@
 
 
 @media(max-width:380px){.room{gap:5px;padding:8px}.room strong{font-size:16px}.room span{font-size:9px}nav button{padding:7px;font-size:10px}#reset{padding:3px 9px}.panel{padding:18px}h1{font-size:21px}}
+@media(max-height:500px){.panel{top:calc(max(10px,env(safe-area-inset-top)) + 80px);transform:translateX(-50%);max-height:calc(100% - 106px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}}

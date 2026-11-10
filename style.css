@@ -6,3 +6,4 @@
 
 .hud select{background:#193747;color:#fff;border:1px solid #78909b;border-radius:8px;padding:7px 5px;font:inherit;max-width:83px;}
 @media(max-width:400px){.hud nav{gap:3px}.hud button{padding:6px 7px}.hud .room span{font-size:10px}.hud select{font-size:12px;padding:6px 2px;max-width:64px}}
+@media(max-width:400px){.hud .room span{display:none}.hud .room strong,.hud nav button{white-space:nowrap}.hud .room{flex-shrink:0}.hud nav{flex-shrink:0}}

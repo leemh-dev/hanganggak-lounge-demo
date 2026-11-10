@@ -14,3 +14,10 @@
 @media(pointer:coarse){#social{bottom:calc(140px + var(--chat-bottom,0px));width:min(275px,calc(100% - 24px));max-height:min(45dvh,var(--chat-height,65dvh))}#messages{height:90px}}
 .keyboard-open #social{bottom:calc(8px + var(--chat-bottom,0px));max-height:var(--chat-height,65dvh)}.keyboard-open #joystick,.keyboard-open #touch-camera{display:none}.keyboard-open #messages{height:55px}.keyboard-open #participants{max-height:45px}
 @media(max-height:450px){#social{max-height:calc(100dvh - 75px);bottom:8px}#messages{height:60px}#identity{display:none}}
+
+
+/* Stock selection shares the existing map/avatar assets. */
+#demo-change[data-direction="up"]{color:#ef5757}#demo-change[data-direction="down"]{color:#579cff}
+#entry-stock-select{display:block;width:100%;padding:12px;margin:8px 0;border-radius:10px;background:#183b4a;color:#fff;font:inherit;border:1px solid #76939b}
+#welcome{max-height:calc(100dvh - 32px);overflow-y:auto}#entry-status{font-size:13px;min-height:1.5em}#stock-select{max-width:220px}
+@media(max-width:600px){.hud{flex-wrap:wrap;gap:6px}.hud nav{flex-wrap:wrap;gap:4px}#stock-select{max-width:170px}#welcome{padding:20px}#welcome p{margin:10px 0}}

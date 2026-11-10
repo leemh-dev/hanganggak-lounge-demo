@@ -37,3 +37,6 @@
 #stock-picker .stock-search-row button{width:auto;margin:0;flex:0 0 auto}
 
 #toggle-chat{position:absolute;z-index:9;right:max(12px,env(safe-area-inset-right));bottom:calc(max(12px,env(safe-area-inset-bottom)) + var(--chat-bottom,0px));min-width:72px;min-height:44px;background:#123543f2;box-shadow:0 3px 14px #0003}#toggle-chat[aria-expanded="true"]{background:#d7ebde;color:#173c3c;border-color:#d7ebde}
+
+
+#demo-change{white-space:normal;overflow-wrap:anywhere;max-width:72vw;line-height:1.35} @media(max-width:600px){#demo-change{font-size:10px;max-width:60vw}}

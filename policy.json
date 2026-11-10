@@ -1,37 +1,48 @@
 {
-  "version": 2,
+  "version": 3,
   "coordinate_system": "blender_z_up",
   "camera_type": "perspective",
   "follow_avatar": true,
   "pan_enabled": false,
   "azimuth_degrees": {
-    "min": -8,
-    "max": 20,
+    "min": -180,
+    "max": 180,
     "default": 8
   },
   "elevation_degrees": {
-    "min": 10,
-    "max": 20,
-    "default": 12
+    "min": 12,
+    "max": 32,
+    "default": 18
   },
   "distance_range": {
-    "min": 4.4,
-    "max": 6,
-    "default": 5.2
+    "min": 3.2,
+    "max": 5.5,
+    "default": 4.7
   },
-  "target_height": 1.15,
+  "target_height": 1.5,
   "fov_degrees": 50,
-  "near": 0.08,
+  "near": 0.05,
   "far": 300,
   "player_bounds": {
     "x": [
-      -4.78,
-      4.78
+      -8.5,
+      8.5
     ],
     "y": [
-      -4.28,
-      3.28
+      -3.4,
+      3.4
     ]
   },
-  "occlusion_opacity": 0.12
+  "continuous_yaw": true,
+  "camera_radius": 0.2,
+  "camera_bounds": {
+    "x": [
+      -9.5,
+      9.5
+    ],
+    "y": [
+      -4.5,
+      4.5
+    ]
+  }
 }

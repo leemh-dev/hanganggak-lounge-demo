@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "coordinate_system": "blender_z_up",
   "camera_type": "perspective",
   "follow_avatar": true,
@@ -11,9 +11,9 @@
     "default": -90
   },
   "elevation_degrees": {
-    "min": 8,
-    "max": 30,
-    "default": 8
+    "min": -65,
+    "max": 45,
+    "default": -8
   },
   "distance_range": {
     "min": 2.6,

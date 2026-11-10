@@ -1,50 +1,37 @@
 {
-  "version": 1,
+  "version": 2,
   "coordinate_system": "blender_z_up",
-  "camera_type": "orthographic",
-  "target": [
-    -0.4,
-    0.6,
-    3.4
-  ],
-  "distance": 20,
+  "camera_type": "perspective",
+  "follow_avatar": true,
+  "pan_enabled": false,
   "azimuth_degrees": {
-    "min": 8,
-    "max": 42,
-    "default": 28
+    "min": -8,
+    "max": 20,
+    "default": 8
   },
   "elevation_degrees": {
     "min": 10,
-    "max": 18,
-    "default": 14
+    "max": 20,
+    "default": 12
   },
-  "ortho_width": {
-    "min": 16.5,
-    "max": 18.5,
-    "default": 17
+  "distance_range": {
+    "min": 4.4,
+    "max": 6,
+    "default": 5.2
   },
-  "framing_reference_aspect": 1.3333333333333333,
-  "near": 0.1,
-  "far": 250,
-  "pan_enabled": false,
-  "follow_avatar": false,
-  "cutaway_hidden_meshes": [
-    "L01_Ceiling",
-    "L01_FrontWall",
-    "L01_RightWall"
-  ],
-  "room_floor_bounds": {
+  "target_height": 1.15,
+  "fov_degrees": 50,
+  "near": 0.08,
+  "far": 300,
+  "player_bounds": {
     "x": [
-      -5,
-      5
+      -4.78,
+      4.78
     ],
     "y": [
-      -4.5,
-      3.5
-    ],
-    "z": 0
+      -4.28,
+      3.28
+    ]
   },
-  "runtime_status": "standalone_controller_verified_service_integration_pending",
-  "notes": "Design assumptions. Azimuth from -Y toward +X; elevation above XY plane. Preserve minimum horizontal and vertical coverage across aspect ratios."
+  "occlusion_opacity": 0.12
 }
-

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "camera_type": "orthographic",
+  "target": [
+    -0.4,
+    0.6,
+    3.4
+  ],
+  "distance": 20,
+  "azimuth_degrees": {
+    "min": 8,
+    "max": 42,
+    "default": 28
+  },
+  "elevation_degrees": {
+    "min": 10,
+    "max": 18,
+    "default": 14
+  },
+  "ortho_width": {
+    "min": 16.5,
+    "max": 18.5,
+    "default": 17
+  },
+  "framing_reference_aspect": 1.3333333333333333,
+  "near": 0.1,
+  "far": 250,
+  "pan_enabled": false,
+  "follow_avatar": false,
+  "cutaway_hidden_meshes": [
+    "L01_Ceiling",
+    "L01_FrontWall",
+    "L01_RightWall"
+  ],
+  "room_floor_bounds": {
+    "x": [
+      -5,
+      5
+    ],
+    "y": [
+      -4.5,
+      3.5
+    ],
+    "z": 0
+  },
+  "runtime_status": "standalone_controller_verified_service_integration_pending",
+  "notes": "Design assumptions. Azimuth from -Y toward +X; elevation above XY plane. Preserve minimum horizontal and vertical coverage across aspect ratios."
+}
+

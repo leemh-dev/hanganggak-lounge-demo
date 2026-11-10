@@ -40,3 +40,6 @@
 
 
 #demo-change{white-space:normal;overflow-wrap:anywhere;max-width:72vw;line-height:1.35} @media(max-width:600px){#demo-change{font-size:10px;max-width:60vw}}
+
+
+#river-interact{position:absolute;z-index:25;bottom:max(84px,calc(env(safe-area-inset-bottom) + 70px));left:50%;transform:translateX(-50%);padding:14px 22px;border:2px solid #f5c56b;border-radius:14px;background:#203441;color:#fff;font-size:16px;font-weight:700;touch-action:manipulation;min-height:48px;box-shadow:0 3px 14px #0008;}#river-interact[hidden]{display:none}
